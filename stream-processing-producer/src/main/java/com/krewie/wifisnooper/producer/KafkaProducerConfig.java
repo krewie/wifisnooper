@@ -36,8 +36,6 @@ public class KafkaProducerConfig {
 
     @Bean
     public ProducerFactory<String, Device> producerFactory() {
-       /* DefaultKafkaProducerFactory<String, Object> factory = new DefaultKafkaProducerFactory<>(producerConfigs());
-        factory.setValueSerializer(ValueSerializer());*/
        return new DefaultKafkaProducerFactory<>(producerConfigs());
     }
 

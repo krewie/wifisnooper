@@ -17,9 +17,10 @@ public class WifiSnooperProducerApplication {
 	//String jsonString = "{\"TYPE\":\"Device\",\"SSID\":\"comhem_C0E\",\"MAC\":\"68ab1e1ae5e3\",\"CHNL\":\"3\",\"RSSI\":\"-70\"}";
 		while(true) {
 			Thread.sleep(10000);
-			producer.send(new Device("Device", Randomizer.randomIdentifier(), Randomizer.randomIdentifier(), "3", "50"));
-			producer.send(new Device("Device", Randomizer.randomIdentifier(), Randomizer.randomIdentifier(), "3", "50"));
-			producer.send(new Device("Device", Randomizer.randomIdentifier(), Randomizer.randomIdentifier(), "3", "50"));
+			producer.send(new Device("Device", Randomizer.randomIdentifier(), Randomizer.randomIdentifier(), 3, 50));
+			producer.send(new Device("Device", Randomizer.randomIdentifier(), Randomizer.randomIdentifier(), 3, 50));
+			producer.send(new Device("Device", Randomizer.randomIdentifier(), "TDP53EFH", 3, 50));
+
 		}
 	}
 }

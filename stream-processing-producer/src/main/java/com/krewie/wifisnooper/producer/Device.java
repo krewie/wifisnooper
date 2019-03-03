@@ -7,10 +7,10 @@ public class Device implements Serializable {
     private String type;
     private String ssid;
     private String mac;
-    private String chnl;
-    private String rssi;
+    private Integer chnl;
+    private Integer rssi;
 
-    public Device(String type, String ssid, String mac, String chnl, String rssi) {
+    public Device(String type, String ssid, String mac, Integer chnl, Integer rssi) {
         this.type = type;
         this.ssid = ssid;
         this.mac = mac;
@@ -42,19 +42,19 @@ public class Device implements Serializable {
         this.mac = mac;
     }
 
-    public String getChnl() {
+    public Integer getChnl() {
         return chnl;
     }
 
-    public void setChnl(String chnl) {
+    public void setChnl(Integer chnl) {
         this.chnl = chnl;
     }
 
-    public String getRssi() {
+    public Integer getRssi() {
         return rssi;
     }
 
-    public void setRssi(String rssi) {
+    public void setRssi(Integer rssi) {
         this.rssi = rssi;
     }
 }
