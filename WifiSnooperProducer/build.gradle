@@ -1,0 +1,24 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.3.RELEASE'
+	id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.krewie.wifisnooper'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.apache.kafka:kafka-streams'
+	implementation 'org.springframework.kafka:spring-kafka'
+	implementation 'com.fasterxml.jackson.datatype:jackson-datatype-hibernate5:2.8.8'
+	implementation 'org.hibernate:hibernate-core:5.2.2.Final'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
